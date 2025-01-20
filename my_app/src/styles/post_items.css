@@ -1,0 +1,24 @@
+h1 {
+    margin: 0;
+}
+
+.post {
+    display: flex;
+    justify-content: center;
+
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.post_btns {
+    display: flex;
+    align-items: center;
+
+    padding-left: 30px;
+}
+
+.post_btns button {
+    height: 100%;
+
+    cursor: pointer;
+}
