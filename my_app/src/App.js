@@ -1,8 +1,9 @@
 import React, {use, useState} from "react";
 import Counter from "./components/Counter";
-import PostItem from "./components/PostItem";
+import ContainerCounters from "./components/ContainerCounters";
+
 import PostList from "./components/PostList";
-// import ClassCounter from "./components/classCounter";
+import ContainerForm from "./components/UI/input/ContainerForm";
 
 const App = () => {
 
@@ -12,20 +13,12 @@ const App = () => {
         {id: 3, title: 'JS 2', body: 'Description'},
     ]);
 
+
     return (
         <>
-            <div className='main-container'>
-                <Counter/>
-                <Counter/>
-                <Counter/>
-                {/*<ClassCounter/>*/}
-                {/*<ClassCounter/>*/}
-                {/*<ClassCounter/>*/}
-            </div>
-            <div>
-                <PostList posts={posts} title={'List of posts 1'}/>
-                <PostList posts={posts} title={'List of posts 2'}/>
-            </div>
+            <ContainerCounters/>
+            <ContainerForm/>
+            <PostList posts={posts} title={'List of posts 1'}/>
         </>
     );
 };

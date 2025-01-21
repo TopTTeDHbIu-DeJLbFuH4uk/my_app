@@ -1,15 +1,15 @@
 import React from "react";
-import '../styles/post_items.css';
+import classes from '../styles/PostItems.module.css';
 
 const PostItem = (props) => {
 
     return (
-        <div className='post'>
-            <div className="post-content">
+        <div className={classes.post}>
+            <div className={classes.postContent}>
                 <strong>{props.post.id}. {props.post.title}</strong>
                 <h1>{props.post.body}</h1>
             </div>
-            <div className="post_btns">
+            <div className={classes.postBtns}>
                 <button>Delete</button>
             </div>
         </div>

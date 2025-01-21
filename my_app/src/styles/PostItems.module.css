@@ -10,14 +10,21 @@ h1 {
     margin-bottom: 10px;
 }
 
-.post_btns {
+.postContent {
+    border: 2px solid white;
+    padding: 5px;
+
+    cursor: default;
+}
+
+.postBtns {
     display: flex;
     align-items: center;
 
     padding-left: 30px;
 }
 
-.post_btns button {
+.postBtns button {
     height: 100%;
 
     cursor: pointer;
