@@ -1,6 +1,6 @@
 import React from 'react';
 import Counter from "./Counter";
-import classes from '../styles/Сounter.module.css';
+import classes from './Сounter.module.css';
 
 const ContainerCounters = () => {
     return (

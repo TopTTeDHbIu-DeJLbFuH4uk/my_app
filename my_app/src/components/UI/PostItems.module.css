@@ -11,6 +11,8 @@ h1 {
 }
 
 .postContent {
+    width: 100%;
+
     border: 2px solid white;
     padding: 5px;
 

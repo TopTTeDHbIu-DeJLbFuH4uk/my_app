@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import classes from '../styles/Сounter.module.css';
+import classes from './Сounter.module.css';
 
 const Counter = () => {
     const [count, setCount] = useState(0);

@@ -1,16 +1,19 @@
 import React from "react";
-import classes from '../styles/PostItems.module.css';
+import classes from './PostItems.module.css';
+import MyButton from "./button/MyButton";
 
 const PostItem = (props) => {
 
     return (
         <div className={classes.post}>
             <div className={classes.postContent}>
-                <strong>{props.post.id}. {props.post.title}</strong>
+                <strong>{props.number}. {props.post.title}</strong>
                 <h1>{props.post.body}</h1>
             </div>
             <div className={classes.postBtns}>
-                <button>Delete</button>
+                <MyButton onClick={() => props.remove(props.post)}>
+                    Delete
+                </MyButton>
             </div>
         </div>
     );
