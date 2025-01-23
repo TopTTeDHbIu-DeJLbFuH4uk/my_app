@@ -1,4 +1,9 @@
-h1 {
+.postDescription {
+    margin: 0;
+}
+
+.postTitle {
+    text-align: center;
     margin: 0;
 }
 

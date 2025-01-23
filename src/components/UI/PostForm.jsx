@@ -1,8 +1,6 @@
 import React, {useState} from 'react';
 import classes from "./input/MyInput.module.css";
 import MyButton from "./button/MyButton";
-// import classes from './components/UI/input/MyInput.module.css';
-
 
 const PostForm = ({create}) => {
 
@@ -24,7 +22,6 @@ const PostForm = ({create}) => {
     return (
         <form className={classes.containerForm} onSubmit={addNewPost}>
             <div className={classes.containerInputs}>
-                {/* Управляемый компонент */}
                 <input
                     value={post.title}
                     onChange={e => setPost({...post, title: e.target.value})}
@@ -32,7 +29,6 @@ const PostForm = ({create}) => {
                     className={classes.myInput}
                     type="text"
                     placeholder='Post name'/>
-                {/* Неуправляемый компонент */}
                 <input
                     value={post.body}
                     onChange={e => setPost({...post, body: e.target.value})}

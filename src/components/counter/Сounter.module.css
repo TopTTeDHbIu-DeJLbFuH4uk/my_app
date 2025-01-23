@@ -1,9 +1,3 @@
-body {
-    margin: 0;
-    padding: 0 20px 0 20px;
-    background-color: gray;
-}
-
 .mainContainer {
     display: flex;
     justify-content: center;
